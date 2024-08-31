@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Advanced Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Forecast</h1>
+            <input type="text" id="cityInput" placeholder="Search For Places...." />
+            <button id="getWeatherBtn">Get Weather</button>
+            <button id="unitToggleBtn" class="toggle-btn">in °C</button>
+        </div>
+        <div id="currentWeather" class="current-weather"></div>
+        <div class="highlights">
+            <h2>Today's Highlights</h2>
+            <div id="highlights" class="highlights-grid"></div>
+        </div>
+        <div class="forecast">
+            <h2>7-Day Forecast</h2>
+            <div id="forecastList" class="forecast-grid"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

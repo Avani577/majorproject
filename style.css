@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('skuy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding:20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(253, 254, 255, 0.333);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border: rgb(128, 128, 128);
+    border-radius: 25px;
+}
+
+input {
+    width: calc(70% - 20px);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #07386d;
+}
+
+.toggle-btn {
+    background-color: #08d10b;
+}
+
+.toggle-btn:hover {
+    background-color: #228b06;
+}
+
+.current-weather {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.highlights, .forecast {
+    margin: 20px 0;
+}
+
+.highlights-grid, .forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.highlight-item, .forecast-item {
+    background-color: #ffffffb4;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.highlight-item h3, .forecast-item h3 {
+    margin: 10px 0;
+}
